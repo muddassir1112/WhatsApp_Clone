@@ -1,0 +1,77 @@
+.chat {
+  margin-left: 380px;
+}
+.chat__backdrop {
+  background-color: #eeeeee;
+  height: 80px;
+}
+.chat__page {
+  background-image: url("../../images//whtasppWallpaper.jpg");
+  height: 80vh;
+  overflow-y: scroll;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.chat__page__message {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px 0px 10px 10px;
+  padding: 5px 5px 5px 5px;
+  background-color: #daf8cb;
+  color: black;
+  margin-left: 75%;
+  width: 25%;
+  word-break: break-all;
+  height: auto;
+}
+.chat__header {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1.5%;
+}
+/* expandible search */
+.search-click {
+  border: 1px solid green;
+  outline: none;
+  background-size: 22px;
+  background-position: 13px;
+  background-image: url("../../images//search-512.webp");
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 25px;
+  transition: all 0.5s;
+}
+.search-click:focus {
+  width: 300px;
+  padding-left: 50px;
+  border-radius: 10px;
+}
+.search-click {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+}
+.search-click input {
+  background: transparent;
+  border: 1px solid #ccc;
+  outline: none;
+  position: absolute;
+  width: 300px;
+  height: 50px;
+  left: 0%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 1140px) {
+  .chat__backdrop {
+    width: auto;
+  }
+  .chat__header {
+    width: auto;
+  }
+  .chat__page {
+    width: auto;
+  }
+}
